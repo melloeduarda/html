@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Livros</title>
+</head>
+<body>
+    <header>
+        <h1>Buscar Livros</h1>
+        <a class="botao" href="index.html">Voltar</a>
+    <header>
+
+        <form>
+            <input type="text" placeholder="Título, autor ou catergoria">
+            <button type="submit">Buscar</button>
+        <form>
+
+            <p>Filtrar por:</p>
+            <button>Título</button>
+            <button>Autor</button>
+            <button>Categoria</button>
+
+            <h2>Resultados</h2>
+            <div class="card">
+                <h3>Dom Alguém</h3>
+                <p>Machado de Assis</p>
+                <p>Disponível</p>
+                <a class="botao" href="confirmar.html">+</a>
+            </div>
+
+            <div class="card">
+                <h3>O Guarani</h3>
+                <p>Tonhão da Lua</p>
+                <p>Emprestado</p>
+                <button disabled>+</button>
+            </div>
+</body>
+</html>
+
+/* ==========================================
+   Configurações Globais e Base
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff5f6; /* Rosa pastel bem claro */
+    color: #4a3b3c; /* Cinza escuro quente para boa leitura */
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Container Principal */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(240, 180, 190, 0.2); /* Sombra rosada suave */
+}
+
+/* ==========================================
+   Cabeçalho (Header)
+   ========================================== */
+header {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffe3e7;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: #d15b76; /* Rosa marcante */
+    font-size: 2rem;
+}
+
+header h2 {
+    color: #8c7377;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Títulos das Seções */
+h2 {
+    color: #b34760; /* Rosa médio */
+    font-size: 1.3rem;
+    margin: 25px 0 15px 0;
+}
+
+/* ==========================================
+   Formulários e Inputs de Busca
+   ========================================== */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #ffe3e7;
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.95rem;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus {
+    border-color: #ffb3c1; /* Destaca a borda ao clicar */
+}
+
+form button {
+    background-color: #d15b76;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+form button:hover {
+    background-color: #b34760;
+}
+
+/* ==========================================
+   Filtros
+   ========================================== */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.filtros p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #8c7377;
+    margin-right: 5px;
+}
+
+.filtros button {
+    background-color: #fff0f2;
+    color: #b34760;
+    border: 1px solid #ffb3c1;
+    padding: 6px 12px;
+    border-radius: 20px; /* Botões arredondados estilo pílula */
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filtros button:hover {
+    background-color: #ffb3c1;
+    color: white;
+}
+
+/* ==========================================
+   Listas da Página Inicial
+   ========================================== */
+ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+ul li {
+    background: #fff0f2;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #ffb3c1;
+    font-size: 0.95rem;
+}
+
+/* ==========================================
+   Cards e Resultados
+   ========================================== */
+.card {
+    background: #ffffff;
+    border: 1px solid #ffe3e7;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    margin-bottom: 15px;
+    position: relative; /* Permite posicionar o botão + perfeitamente */
+}
+
+.card h3 {
+    color: #d15b76;
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #8c7377;
+}
+
+/* Cores de Status para os Livros */
+.status {
+    font-weight: bold;
+    font-size: 0.85rem !important;
+    margin-top: 5px;
+}
+
+.status.disponivel {
+    color: #4caf50; /* Verde discreto */
+}
+
+.status.emprestado {
+    color: #9e9e9e; /* Cinza para indisponível */
+}
+
+/* ==========================================
+   Botões Gerais e Links de Ação
+   ========================================== */
+/* Botão Voltar do Header e Botão Buscar Livros */
+.botao {
+    display: inline-block;
+    background-color: #ffb3c1;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+/* Ajuste específico para o botão principal ficar grandão na home */
+main > .botao {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+.botao:hover {
+    background-color: #e69da9;
+}
+
+/* Botão de Adicionar Livro (+) */
+.botao-adicionar {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffb3c1;
+    color: white;
+    border: none;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; /* Perfeitamente redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.botao-adicionar:hover:not(:disabled) {
+    background-color: #d15b76;
+}
+
+/* Estado desativado do botão + */
+.botao-adicionar:disabled {
+    background-color: #f0f0f0;
+    color: #ccc;
+    cursor: not-allowed;
+}

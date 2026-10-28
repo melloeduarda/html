@@ -1,0 +1,289 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff5f6; /* Rosa pastel bem claro */
+    color: #4a3b3c; /* Cinza escuro quente para boa leitura */
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Container Principal */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(240, 180, 190, 0.2); /* Sombra rosada suave */
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ffe3e7;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: #d15b76; /* Rosa marcante */
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    color: #8c7377;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Títulos das Seções */
+h2 {
+    color: #b34760; /* Rosa médio */
+    font-size: 1.3rem;
+    margin: 25px 0 10px 0;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+ul li {
+    background: #fff0f2; /* Fundo rosa bem suave para os itens */
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #ffb3c1; /* Detalhe em rosa na esquerda */
+    font-size: 0.95rem;
+}
+
+/* Card de Empréstimos */
+.card {
+    background: #ffffff;
+    border: 1px solid #ffe3e7;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #d15b76;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #8c7377;
+}
+
+/* Botão de Busca */
+.botão {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #ffb3c1; /* Rosa claro principal */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Efeito ao passar o mouse no botão */
+.botão:hover {
+    background-color: #e69da9; /* Tom de rosa ligeiramente mais escuro */
+}
+
+/* Efeito ao clicar no botão */
+.botão:active {
+    transform: scale(0.98);
+}
+
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff5f6; /* Rosa pastel bem claro */
+    color: #4a3b3c; /* Cinza escuro quente */
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Estrutura do Header */
+header {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffe3e7;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: #d15b76; /* Rosa marcante */
+    font-size: 2rem;
+}
+
+/* Botão Voltar e Botão de Adicionar (+) */
+.botao {
+    display: inline-block;
+    background-color: #ffb3c1; /* Rosa claro */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.botao:hover {
+    background-color: #e69da9;
+}
+
+/* Formulário de Busca */
+form {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    gap: 10px;
+}
+
+form input[type="text"] {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #ffe3e7;
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+form input[type="text"]:focus {
+    border-color: #ffb3c1;
+}
+
+form button[type="submit"] {
+    background-color: #d15b76;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #b34760;
+}
+
+/* Texto 'Filtrar por:' e Botões de Filtro soltos no body */
+body > p {
+    max-width: 600px;
+    margin: 0 auto 10px auto;
+    font-weight: bold;
+    color: #8c7377;
+}
+
+body > button {
+    background-color: #fff0f2;
+    color: #b34760;
+    border: 1px solid #ffb3c1;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.2s;
+}
+
+body > button:hover {
+    background-color: #ffb3c1;
+    color: white;
+}
+
+/* Alinhamento dos botões de filtro na página */
+body > button:nth-of-type(1) {
+    margin-left: calc(50% - 300px); /* Alinha com a margem esquerda do bloco de 600px */
+}
+@media (max-width: 640px) {
+    body > button:nth-of-type(1) {
+        margin-left: 0;
+    }
+}
+
+/* Título de Resultados */
+h2 {
+    max-width: 600px;
+    margin: 25px auto 15px auto;
+    color: #b34760;
+    font-size: 1.3rem;
+}
+
+/* Cards de Resultado */
+.card {
+    max-width: 600px;
+    margin: 0 auto 15px auto;
+    background: #ffffff;
+    border: 1px solid #ffe3e7;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(240, 180, 190, 0.1);
+    position: relative;
+}
+
+.card h3 {
+    color: #d15b76;
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #8c7377;
+}
+
+/* Estilização dos botões de adicionar (+ e disabled) dentro do card */
+.card .botao, 
+.card button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* Botão desativado (+) */
+.card button:disabled {
+    background-color: #f0f0f0;
+    color: #ccc;
+    border: none;
+    cursor: not-allowed;
+}

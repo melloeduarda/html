@@ -1,0 +1,113 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff5f6; /* Rosa pastel bem claro */
+    color: #4a3b3c; /* Cinza escuro quente para boa leitura */
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Container Principal */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(240, 180, 190, 0.2); /* Sombra rosada suave */
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ffe3e7;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: #d15b76; /* Rosa marcante */
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    color: #8c7377;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Títulos das Seções */
+h2 {
+    color: #b34760; /* Rosa médio */
+    font-size: 1.3rem;
+    margin: 25px 0 10px 0;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+ul li {
+    background: #fff0f2; /* Fundo rosa bem suave para os itens */
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #ffb3c1; /* Detalhe em rosa na esquerda */
+    font-size: 0.95rem;
+}
+
+/* Card de Empréstimos */
+.card {
+    background: #ffffff;
+    border: 1px solid #ffe3e7;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #d15b76;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #8c7377;
+}
+
+/* Botão de Busca */
+.botão {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #ffb3c1; /* Rosa claro principal */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Efeito ao passar o mouse no botão */
+.botão:hover {
+    background-color: #e69da9; /* Tom de rosa ligeiramente mais escuro */
+}
+
+/* Efeito ao clicar no botão */
+.botão:active {
+    transform: scale(0.98);
+}
+
